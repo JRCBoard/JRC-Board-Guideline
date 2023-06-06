@@ -29,11 +29,11 @@
   https://espressif.github.io/arduino-esp32/package_esp32_index.json
   ```
 - Open Arduino Software
-- Go to File -> Preferences
-- Paste the board manager link into the `Additional boards manager URLs` field.
+- Go to `File > Preferences`
+- Paste the board manager link into the `Additional boards manager URLs` field and click `Ok`.
   <img src="images/additional_board.png" width="400">
 - Restart Arduino IDE
-- Goto Tools -> Board -> Boards Manager.
+- Goto `Tools > Board > Boards Manager`.
 - Type `esp32` on the search bar
 
   <img src="images/board_search.png" width="300">
