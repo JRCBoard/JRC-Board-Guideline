@@ -1,16 +1,41 @@
 # JRC-Board-Guideline
-Here, all the specs and instructions will be published
 
-Setup Process:
-1/ install VCP Driver for FTDI Uploader Chip (attached with the branch)
-2/ copy the URL of ESP32 Board Manager: 
-      https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-3/ install Arduino IDE from the link below:
-      https://www.arduino.cc/en/software
-4/ open Arduino Software
-5/ go to File -> Preferences -> addtional board manager URLs
-6/ paste the link you used in step 2 and click ok
-7/ goto tools -> board -> board manager. An additional window will pop up
-8/ type ESP32 on the search bar of that window
-9/ install the latest version of ESP32
-10/ follow the project book and enjoy!
+## Setup
+
+- Clone the github repository first using git:
+
+  ```
+  git clone https://github.com/JRCBoard/JRC-Board-Guideline.git
+  ```
+
+- Or download the zip file and Extract it:
+
+  <img src="images/download_zip.png" width="300">
+
+### Install Arduino
+
+- Download and install the latest version of arduino from https://www.arduino.cc/en/software
+
+### Install VCP Driver
+
+- Extract the `CDM212364_Setup.zip` and install the driver
+
+### Install ESP32 Boards in Arduino Board Manager
+
+- Go to the official installation instruction of esp32 manufacturer: https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+  - Copy the stable release link of esp32 board manager from the website.
+- Or, copy the link from below.
+  ```
+  https://espressif.github.io/arduino-esp32/package_esp32_index.json
+  ```
+- Open Arduino Software
+- Go to `File > Preferences`
+- Paste the board manager link into the `Additional boards manager URLs` field and click `Ok`.
+  <img src="images/additional_board.png" width="400">
+- Restart Arduino IDE
+- Goto `Tools > Board > Boards Manager`.
+- Type `esp32` on the search bar
+
+  <img src="images/board_search.png" width="300">
+
+- Click the Install button selecting the latest version from the drop down.
